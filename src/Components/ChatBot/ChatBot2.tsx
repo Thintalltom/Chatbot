@@ -56,16 +56,16 @@ const ChatBot2 = () => {
   };
 
   return (
-    <div className=" ">
+    <div className="fixed bottom-10 right-5 rounded-lg p-[50px] z-50 ">
       <button
-        className="fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg"
+        className="fixed bottom-10 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg"
         onClick={() => setIsOpen(!isOpen)}
       >
-        💬
+       💬 
       </button>
 
       {isOpen && (
-        <div className="max-w-lg mx-auto p-4 border rounded shadow-lg">
+        <div className=" max-w-lg mx-auto p-4 border  rounded shadow-lg">
           <h2 className="text-xl font-bold mb-4">Chat with AI</h2>
           <div className="h-80 overflow-y-auto p-2 border rounded bg-gray-100">
             {messages.map((msg, index) => (
